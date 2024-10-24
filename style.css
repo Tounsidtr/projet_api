@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: auto;
+    background-color: #fcc4c4;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff8b88;
+}
+
+.search__container {
+    width: 430px;
+    padding-top: 64px;
+    position: relative; /* Positionne le conteneur comme relatif pour les éléments absolus à l'intérieur */
+}
+
+
+.search__title {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 900;
+    color: #ff8b88;
+    top: 10px; 
+    left: 10px; 
+    transform: none; 
+}
+
+.btn{
+    
+    position: absolute;
+    right: 10px; /* Décale le bouton vers la droite */
+    top: 50%; /* Centre le bouton verticalement */
+    transform: translateY(-50%); /* Ajuste la position du bouton */
+    background: #ff8b88; /* Couleur de fond du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 50px; /* Coins arrondis */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Curseur en main */
+    padding: 8px 12px; /* Espacement intérieur */
+    transition: background 250ms ease-in-out;
+
+}
+.search__wrapper {
+    position: relative; 
+}
+
+.search__input {
+    width: 100%;
+    padding: 12px 48px; /* Ajoute de l'espace à droite pour le bouton */
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+
+        color: rgba(87, 87, 86, 0.8); 
+    }
+
+.result-container {
+    display: flex;              /* Active Flexbox pour le conteneur */
+    margin: 2rem auto 0 auto;
+    flex-wrap: wrap; 
+    width: 80%;        /*Empêche le passage à la ligne*/
+    gap: 2rem;
+    justify-content: center;                 /* Espace entre les éléments */
+           
+    /* overflow-x: auto; */
+}
+
+.result-item {
+    background-color: #e2a6a6; /* Couleur de fond */
+    box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1); /* Ombre portée */
+    font-size: 1.2rem;         /* Taille de police */
+    width: 19rem;              /* Largeur fixe */
+    border-radius: 0.7rem;     /* Coins arrondis */
+    text-align: center;        /* Centre le texte à l'intérieur de result-item */
+    padding: 4rem;
+    height: 400px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-more-button {
+    background-color: #ff8b88; /* Couleur de fond */
+    border: none;              /* Pas de bordure */
+    border-radius: 5px;       /* Coins arrondis */
+    color: white;              /* Couleur du texte */
+    cursor: pointer;           /* Curseur en main */
+    padding: 10px 15px;       /* Espacement intérieur */
+    font-size: 1rem;          /* Taille de police */
+    margin-top: 10px;         /* Espace au-dessus du bouton */
+    transition: background 250ms ease-in-out; /* Transition pour le survol */
+}
+
+.view-more-button:hover {
+    background-color: #ff6b6b; /* Couleur de fond au survol */
+}
